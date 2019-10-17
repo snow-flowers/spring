@@ -1,0 +1,8 @@
+eureka:
+  client:
+    register-with-eureka: false  # 是否注册自身，集群时需要开启
+    fetch-registry: false # 拉取服务列表
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8761
